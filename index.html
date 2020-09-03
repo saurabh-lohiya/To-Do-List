@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Title</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" href="index.css" />
+  <script src="https://kit.fontawesome.com/9b6215e94a.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>TO_DO_LIST</h1>
+  </header>
+  <div class="todo-list">
+    <div class="task-header">
+      <h1>Today</h1> <small data-task-count>Zero tasks remaining</small>
+    </div>
+
+    <div class="todo-body">
+      <div class="tasks" id="task-container"> </div>
+      <div class="task-creator">
+        <form action="" data-task-form>
+          <button class="btn" id=""><i class="fas fa-plus"></i></button>
+          <input class="form-control" type="text" placeholder="Enter task" data-task-input>
+        </form>
+      </div>
+      <div class="todo-delete">
+        <button class="btn btn-danger" id="delete-completed-tasks">Delete Completed Tasks</button>
+        <button class="btn btn-danger" id="delete-list">Delete List</button>
+      </div>
+    </div>
+
+  </div>
+
+  <template id="task-template">
+    <div class="task">
+      <input type="checkbox" id="task">
+      <label for="task">
+        <span class="custom-checkbox"> </span>
+      </label>
+    </div>
+  </template>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
